@@ -4,8 +4,8 @@ import shutil, os
 import wget
 
 todo = {
-    "Copying Files" : "Incomplete",
-    "Install Code" : "Incomplete",
+    "Install VsCode" : "Complete",
+    "Copied Script files" : "Incomplete",
 }
 
 def printTitle():
@@ -17,12 +17,6 @@ def printTitle():
         print(f"{key}: {status}")
     print("--------------------")
 
-def installVCode():
-    dlink = "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-    fName = "vcode_current.deb"
-    response = wget.download(dlink, f"Downloads/{fName}")
-
-
 def copyFiles():
     username = os.getlogin()
     path = f"/home/{username}/scripts/"
@@ -33,13 +27,10 @@ def copyFiles():
     #copying files from installer to local
     for file in os.listdir(installPath):
         shutil.copy(f"{installPath}{file}", f"{path}{file}")
-    #PIP INSTALLS
-    
 
 def mainFunction():
     printTitle()
     copyFiles()
-    installVCode()
     
 if __name__ == "__main__":
     mainFunction()

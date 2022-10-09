@@ -1,5 +1,9 @@
 # installer
-An easy install scripts for my debian dev os'
-kali, ubuntu, mint. quickly run the scripts and after reboot you are ready to go. 
-creates a scripts folder, update.py etc
+An easy install scripts for a quick debian dev os'
+kali, ubuntu, mint. I like to mix it up it keeps things fun. 
+creates a scripts folder in the home dir
+with an update the system script that updates, upgrades, cleans and removes files. 
+and a few other little auto scripts. 
+
+
 
