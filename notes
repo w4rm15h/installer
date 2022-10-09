@@ -1,0 +1,13 @@
+#install plan 
+#This is gonna be the end of doing this manually
+#Installer
+#Fresh Debian installer
+
+try function to make sure FTP is installed and active
+pull scripts from FTP server
+run update script
+
+install vmware-tools
+sudo apt install -y --reinstall open-vm-tools-desktop
+
+
